@@ -66,7 +66,7 @@ function recisao() {
     let mesesTrabalhados = document.getElementById('mesesTrabalhados')
     let res = document.getElementById('res')
 
-    if (salariob.value == 0) {
+    if (salariob.value == 0 || mesesTrabalhados.value == 0) {
         res.innerHTML = `Valor Inválido!`
         window.alert('[Erro] Faltam dados!')
     }else {
